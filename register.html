@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Student Record</legend>
+        <form action="register.php" method="post" enctype="multipart/form-data">
+         
+                <label for="stid">Student ID:</label>
+                <input type="text" name="stid" id="stid" required>
+            
+            <br><br>
+         
+                <label for="sname">Student Name:</label>
+                <input type="text" name="sname" id="sname" required>
+       
+            <br><br>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <br><br>
+            <div>
+                <label for="dob">Date of Birth :</label>
+                <input type="text" name="dob" id="dob" pattern="\d{1,2}/\d{1,2}/\d{4}" required placeholder="dd/mm/yyyy">
+            </div>
+            <br><br>
+            <div>
+                <label for="dep">Department:</label>
+                <input type="text" name="dep" id="dep" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="avg">Average:</label>
+                <input type="number" name="avg" id="avg" step="0.01" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="addr">Address:</label>
+                <textarea name="addr" id="addr" required></textarea>
+            </div>
+            <br><br>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" required>
+           
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="tel">phone:</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="student_photo">Student Photo:</label>
+                <input type="file" name="student_photo" id="student_photo">
+            </div>
+            <br><br>
+            <div>
+                <button type="submit">Insert</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
